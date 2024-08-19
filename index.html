@@ -3,56 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intégration VistaCreate</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Application Design</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #EFF9FA;
+        }
+
+        .top-nav {
+            background-color: #40444F;
+            color: #F7DC8A;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #706353;
+            height: 100vh;
+            padding-top: 20px;
+            position: fixed;
+            color: white;
+        }
+
+        .sidebar a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #FC9344;
+            color: white;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            height: 100vh;
+            background-color: #EFF9FA;
+        }
+
+        .footer {
+            background-color: #40444F;
+            color: #F7DC8A;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            margin-left: 250px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Intégration des Services VistaCreate</h1>
-        <nav>
-            <ul>
-                <li><a href="#popular-designs">Designs Populaires</a></li>
-                <li><a href="#design-categories">Catégories de Design</a></li>
-                <li><a href="#design-tools">Outils de Conception</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="popular-designs" class="section">
-            <h2>Designs Populaires</h2>
-            <div class="carousel">
-                <button class="prev">&#10094;</button>
-                <div class="carousel-inner">
-                    <iframe src="https://create.vista.com/embed/design/your-design-id-1"></iframe>
-                    <iframe src="https://create.vista.com/embed/design/your-design-id-2"></iframe>
-                </div>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-        
-        <section id="design-categories" class="section">
-            <h2>Catégories de Design</h2>
-            <div class="carousel">
-                <button class="prev">&#10094;</button>
-                <div class="carousel-inner">
-                    <iframe src="https://create.vista.com/embed/category/posters"></iframe>
-                    <iframe src="https://create.vista.com/embed/category/banners"></iframe>
-                </div>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-        
-        <section id="design-tools" class="section">
-            <h2>Outils de Conception</h2>
-            <div class="carousel">
-                <button class="prev">&#10094;</button>
-                <div class="carousel-inner">
-                    <iframe src="https://create.vista.com/tools/design-tool"></iframe>
-                </div>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+
+    <div class="top-nav">
+        Barre de Navigation
+    </div>
+
+    <div class="sidebar">
+        <a href="#">Alkaid</a>
+        <a href="#">Mizar</a>
+        <a href="#">Megrez</a>
+        <a href="#">Merak</a>
+    </div>
+
+    <div class="content">
+        <h1>Zone de Travail</h1>
+        <p>Contenu principal de l'application.</p>
+    </div>
+
+    <div class="footer">
+        Pied de page
+    </div>
+
 </body>
 </html>
