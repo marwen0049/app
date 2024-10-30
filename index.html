@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page d'accueil - Téléchargement de Vidéos</title>
+  <title>Accueil - Téléchargement de Vidéos</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color: #E1E7F0; color: #333;">
@@ -11,45 +11,34 @@
   <!-- Header -->
   <header style="background-color: #21A298; padding: 20px; text-align: center;">
     <h1 style="color: white;">Téléchargez vos Highlights et Collections préférés</h1>
-    <p style="color: #f7f7f7;">Facilement téléchargez et organisez vos contenus favoris depuis Instagram, Facebook, YouTube, Twitter et TikTok</p>
+    <p style="color: #f7f7f7;">Depuis Instagram, Facebook, YouTube, Twitter, et TikTok</p>
   </header>
 
   <!-- Main Content -->
   <main style="padding: 20px;">
-    
+
     <!-- Section for Each Platform -->
     <div class="platform-section" id="instagram">
       <h2>Instagram Highlights & Collections</h2>
-      <div class="video-grid">
-        <!-- Repeatable Video Card -->
-        <div class="video-card">
-          <img src="path/to/thumbnail.jpg" alt="Video Thumbnail">
-          <h3>Highlight Title</h3>
-          <div class="card-actions">
-            <button class="btn download-btn">Télécharger</button>
-            <button class="btn favorite-btn">Favori</button>
+      <div class="carousel">
+        <button class="arrow left-arrow">&#10094;</button>
+        <div class="video-slider">
+          <!-- Repeatable Video Card -->
+          <div class="video-card">
+            <img src="path/to/thumbnail1.jpg" alt="Thumbnail 1">
+            <h3>Titre de la Vidéo</h3>
+            <div class="card-actions">
+              <button class="btn-small download-btn">Télécharger</button>
+              <button class="btn-small favorite-btn">Favori</button>
+            </div>
           </div>
+          <!-- Ajoutez d'autres cartes vidéo ici (total de 5) -->
         </div>
-        <!-- Repeat video cards as needed -->
+        <button class="arrow right-arrow">&#10095;</button>
       </div>
     </div>
 
-    <div class="platform-section" id="facebook">
-      <h2>Facebook Highlights & Collections</h2>
-      <div class="video-grid">
-        <!-- Repeatable Video Card -->
-        <div class="video-card">
-          <img src="path/to/thumbnail.jpg" alt="Video Thumbnail">
-          <h3>Highlight Title</h3>
-          <div class="card-actions">
-            <button class="btn download-btn">Télécharger</button>
-            <button class="btn favorite-btn">Favori</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Repeat sections for YouTube, Twitter, TikTok as needed -->
+    <!-- Repeat section structure for other platforms (Facebook, YouTube, etc.) -->
 
   </main>
 
@@ -58,5 +47,6 @@
     <p style="color: white;">© 2023 - Téléchargement de Vidéos | Tous droits réservés</p>
   </footer>
 
+  <script src="scripts.js"></script>
 </body>
 </html>
