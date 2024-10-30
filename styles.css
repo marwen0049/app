@@ -1,4 +1,4 @@
-/* Body Styling */
+/* General Styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,26 +6,11 @@ body {
   line-height: 1.6;
 }
 
-/* Header Styling */
-header {
-  background-color: #21A298;
+/* Header and Footer */
+header, footer {
   color: #f7f7f7;
   text-align: center;
   padding: 20px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
-/* Footer Styling */
-footer {
-  background-color: #21A298;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 0.9em;
 }
 
 /* Platform Section */
@@ -37,25 +22,29 @@ footer {
   color: #333;
   font-size: 1.5em;
   margin-bottom: 10px;
-  border-bottom: 2px solid #388E3C;
-  display: inline-block;
-  padding-bottom: 5px;
 }
 
-/* Video Grid */
-.video-grid {
+/* Carousel */
+.carousel {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.video-slider {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
 .video-card {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: calc(20% - 20px);
+  margin: 10px;
+  width: 200px;
+  flex: 0 0 auto;
   position: relative;
   transition: transform 0.3s ease;
 }
@@ -66,61 +55,69 @@ footer {
 
 .video-card img {
   width: 100%;
-  height: auto;
-  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .video-card h3 {
   font-size: 1em;
   color: #333;
-  margin: 10px;
+  padding: 10px;
 }
 
 /* Card Actions */
 .card-actions {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px 10px;
   border-top: 1px solid #e1e7f0;
 }
 
-.btn {
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-size: 0.9em;
+.btn-small {
+  padding: 5px 8px;
+  font-size: 0.8em;
   cursor: pointer;
-  text-transform: uppercase;
   font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
 .download-btn {
   background-color: #388E3C;
   color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.favorite-btn {
+  background-color: #21A298;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
 }
 
 .download-btn:hover {
   background-color: #2f6b2c;
 }
 
-.favorite-btn {
-  background-color: #21A298;
-  color: #fff;
-}
-
 .favorite-btn:hover {
   background-color: #1b8370;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .video-card {
-    width: calc(50% - 10px);
-  }
+/* Arrow Buttons */
+.arrow {
+  font-size: 2em;
+  color: #21A298;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-@media (max-width: 480px) {
-  .video-card {
-    width: 100%;
-  }
+.left-arrow {
+  left: -30px;
+}
+
+.right-arrow {
+  right: -30px;
 }
